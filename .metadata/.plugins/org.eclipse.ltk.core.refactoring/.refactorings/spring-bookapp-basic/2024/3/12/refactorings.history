@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.bookapp.service.BookServiceImpl.details&apos; in &apos;com.bookapp.service.BookServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;spring-bookapp-basic&apos;&#x0D;&#x0A;- Original element: &apos;com.bookapp.service.BookServiceImpl.details&apos;&#x0D;&#x0A;- Setter method name: &apos;setDetails&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;details&apos;" flags="589830" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookapp.service{BookServiceImpl.java[BookServiceImpl^details" insertion="4" setter="setDetails" stamp="1710832092328" version="1.0" visibility="1"/>
+</session>

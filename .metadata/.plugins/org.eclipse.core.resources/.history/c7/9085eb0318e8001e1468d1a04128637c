@@ -1,0 +1,15 @@
+package com.insuranceapp.model;
+
+import java.time.LocalDateTime;
+
+import org.springframework.http.HttpStatus;
+
+
+public class ApiErrors {
+	
+	private LocalDateTime timestamp;
+	private int statusCode;
+	private String error;
+	private HttpStatus status;
+
+}

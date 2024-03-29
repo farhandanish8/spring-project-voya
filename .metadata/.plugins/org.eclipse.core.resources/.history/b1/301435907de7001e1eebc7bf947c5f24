@@ -1,0 +1,38 @@
+package com.insuranceapp.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insuranceapp.model.Insurance;
+import com.insuranceapp.service.IInsuranceService;
+@RestController
+@RequestMapping("/insurance-api/v1")
+public class InsuranceController {
+	@Autowired
+	IInsuranceService insuranceService;
+	@PostMapping("/insurances")
+	void addInsurance(@RequestBody Insurance insurance) {
+		insuranceService.addInsurance(insurance);
+	}
+	
+	@PutMapping("/insurances")
+	void updateInsurance(@RequestBody Insurance insurance) {
+		insuranceService.updateInsurance(insurance.getInsuranceId(),insurance.getPremiun());
+	}
+	@DeleteMapping("/insurances/insurance-id/{insuranceId}")
+	void deleteInsurance(@PathVariable("insuranceId")int insuranceId) {
+		insuranceService.deleteInsurance(insuranceId);
+	}
+	@GetMapping("/insurances")
+	List<Insurance> getAll(){
+	
+}

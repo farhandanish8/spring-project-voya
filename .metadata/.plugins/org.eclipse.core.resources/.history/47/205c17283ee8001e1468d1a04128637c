@@ -1,0 +1,8 @@
+package com.insuranceapp.service;
+
+public class AppUserServiceImpl implements UserDetailsManager {
+	
+	
+	
+	
+}

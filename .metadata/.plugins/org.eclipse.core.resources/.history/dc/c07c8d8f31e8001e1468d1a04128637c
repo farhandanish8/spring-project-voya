@@ -1,0 +1,5 @@
+package com.inmem.config;
+
+public class WebConfig {
+
+}
